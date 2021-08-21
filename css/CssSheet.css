@@ -1,0 +1,227 @@
+/* Start varibels */
+
+/* End varibles */
+
+/* start golbal rules */
+
+*{
+     -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+}
+body{
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+}
+
+html{
+        scroll-behavior: smooth;
+   margin: 0;
+
+}
+    
+.container{
+    padding-left: 60px;
+    padding-right: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}    
+/* Small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+/* End golbal rules */
+
+
+/* Start Landing  */
+
+.landing{
+    background-image: url(../images/header.png);
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.landing .container{
+    text-align: center;
+}
+.landing .text {
+    position: absolute;
+    top: 35%;
+    transform: translateY(-50%);
+    transform: translateX(-50%);
+    left: 50%;
+    color: white;
+
+}
+.landing .text h1{
+    font-size: 40pt;
+    margin-bottom: 25px;
+    margin-top: 0;
+    position: relative;
+    font-weight: 600;
+}
+.landing .text h1::before{
+     width: 210px;
+    content: "";
+    position: absolute;
+    height: 2px;
+    bottom: -5px;
+    left: 50%;
+    background-color: white;
+    transform: translateX(-50%);
+}
+.landing .text p{
+    font-size: 15pt;
+}
+/* End Landing  */
+
+/* Start feature */
+.feature{
+    margin-top: 100px;
+    background-color: #efeded;
+}
+.feature .container{
+    display: grid;
+    grid-template-columns: repeat(2,minmax(300px,1fr));
+gap: 50px;
+}
+.feature .container img{
+     max-width: 100%;
+}
+
+.feature .container .box h3{
+    font-size: 20pt;
+    font-weight: 600;
+    padding: 10px;
+    text-align: center;
+}
+.feature .container .colm{
+display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.feature .container .colm #first_box{
+    margin-bottom: 55px;
+}
+.feature .container .box p{
+    letter-spacing: 1.5px;
+    text-align: center;
+}
+
+
+/* End feature */
+
+
+
+/* Start portflio */
+
+.portflio{
+    margin-top: 100px;
+    text-align: center;
+}
+.portflio h2{
+    font-size: 40pt;
+    color: #777;
+    position: relative;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    font-weight: 600;
+
+}
+
+.portflio h2::before{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 250px;
+    bottom:0px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: lightgray;
+}
+.portflio .gallary{
+display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    gap: 20px;
+
+}
+
+.portflio .gallary img{
+    max-width: 100%;
+}
+
+/* End portflio */
+
+/* Start About */
+.about{
+    margin-top: 100px;
+    width: 100%;
+    height: 300px;
+    background-color: #42484c;
+    color: white;
+    text-align: center;
+
+}
+.about .container .text{
+    text-align: center;
+    padding: 20px;
+}
+.about .text h2{
+      font-size: 30pt;
+    font-weight: 500;
+}
+.about .text p {
+    letter-spacing: 1.5px;
+    margin-bottom: 20px;
+}
+.about .text h4{
+    margin-bottom: 5px;
+}
+
+
+/* End About */
+
+/* start footer */
+
+.footer{
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    padding: auto;
+}
+.footer .icons i{
+      padding-top: 20px;
+    font-size: 23pt;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    color: #42484c;
+}
+.footer .text {
+    text-decoration: none;
+    color: #42484c;
+    font-size: 14pt;
+}
+.footer .text a{
+    text-decoration: none;
+    color: cornflowerblue;
+}
+/* End footer */
